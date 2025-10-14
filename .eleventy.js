@@ -1,9 +1,9 @@
-
+// .eleventy.js
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("static");
 
   return {
-    pathPrefix: "/loopspacecafe/", // Add this line!
+    pathPrefix: "/loopspacecafe/", // This must be correct
 
     dir: {
       input: "pages",
