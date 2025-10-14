@@ -1,7 +1,6 @@
 <header class="main-header">
     <div class="header-container">
-        <a href="/" class="logo-link">
-            <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <a href="{{ '/' | url }}" class="logo-link"> <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                 <path class="cup-base" d="M 25 75 Q 20 90 50 90 Q 80 90 75 75 L 75 40 H 25 Z" />
                 <path class="cup-fill" d="M 25 75 L 75 75 L 75 40 H 25 Z" />
                 <path class="cup-base" d="M 20 40 C 30 35 70 35 80 40" stroke-width="6" />
@@ -12,9 +11,9 @@
         </a>
         <nav class="main-nav">
             <ul>
-                <li><a href="/theorems/">Theorems</a></li>
-                <li><a href="/pi-star/">\(\pi_*(S^*)\)</a></li>
-                <li><a href="/library/">Library</a></li>
+                <li><a href="{{ '/theorems/' | url }}">Theorems</a></li>
+                <li><a href="{{ '/pi-star/' | url }}">\(\pi_*(S^*)\)</a></li>
+                <li><a href="{{ '/library/' | url }}">Library</a></li>
             </ul>
         </nav>
     </div>
