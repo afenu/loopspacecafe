@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} | LoopSpace Café</title>
-    <link rel="stylesheet" href="/static/css/style.css">
-    
+    <link rel="stylesheet" href="{{ '/static/css/style.css' | url }}">
     {% if page_css %}
-        <link rel="stylesheet" href="{{ page_css }}">
+    <link rel="stylesheet" href="{{ page_css | url }}">
     {% endif %}
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,8 +38,8 @@
     {% include "footer.html" %}
     
     {% if page_js %}
-        <script src="{{ page_js_data }}"></script>
-        <script src="{{ page_js }}"></script>
+        <script src="{{ page_js_data | url }}"></script>
+        <script src="{{ page_js | url }}"></script>
     {% endif %}
 </body>
 </html>
