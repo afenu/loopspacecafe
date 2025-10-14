@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoopSpace Café Logo Concept</title>
+    <style>
+        :root {
+            --primary-color: #8a6a57; /* A warm, coffee-like brown */
+            --text-color: #333333;
+            --bg-color: #fdfdfd;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: var(--bg-color);
+            margin: 0;
+            font-family: sans-serif; /* For testing purposes */
+        }
+
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .site-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--text-color);
+        }
+
+        /* The SVG Logo */
+        .logo-svg {
+            width: 100px; /* Increased size for better review */
+            height: 100px;
+        }
+
+        /* SVG Paths for the new logo */
+        .cup-base {
+            fill: none;
+            stroke: var(--text-color);
+            stroke-width: 5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .cup-fill {
+            fill: var(--bg-color); /* Matches background for 'empty' cup look */
+        }
+
+        .handle {
+            fill: none;
+            stroke: var(--text-color);
+            stroke-width: 5;
+            stroke-linecap: round;
+        }
+
+        .steam-loop {
+            fill: none;
+            stroke: var(--primary-color);
+            stroke-width: 5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            /* Animation properties */
+            stroke-dasharray: 100; /* Adjust based on path length */
+            stroke-dashoffset: 100; /* Start hidden */
+            animation: drawSteam 4s ease-in-out infinite alternate;
+        }
+
+        @keyframes drawSteam {
+            0% {
+                stroke-dashoffset: 100;
+                opacity: 0.5;
+                transform: translateY(0px) scale(1);
+            }
+            50% {
+                stroke-dashoffset: 0;
+                opacity: 1;
+                transform: translateY(-5px) scale(1.02);
+            }
+            100% {
+                stroke-dashoffset: 100;
+                opacity: 0.5;
+                transform: translateY(0px) scale(1);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="logo-container">
+        <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path class="cup-base" d="M 25 75 Q 20 90 50 90 Q 80 90 75 75 L 75 40 H 25 Z" />
+            <path class="cup-fill" d="M 25 75 L 75 75 L 75 40 H 25 Z" />
+            <path class="cup-base" d="M 20 40 C 30 35 70 35 80 40" stroke-width="6" />
+            <path class="handle" d="M 80 50 C 90 50 90 65 80 65" />
+            <path class="steam-loop" d="M 40 30 C 35 20 45 10 50 15 C 55 10 65 20 60 30 C 65 35 55 40 50 35 C 45 40 35 35 40 30 Z" />
+        </svg>
+        <span class="site-title">LoopSpace Café</span>
+    </div>
+
+</body>
+</html>

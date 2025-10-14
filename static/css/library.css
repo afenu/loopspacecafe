@@ -1,0 +1,82 @@
+/* --- Library Page Specific Styles --- */
+
+.library-main {
+    max-width: 1200px;
+    margin: 3rem auto; /* Increased top/bottom margin */
+    padding: 0 2rem;
+}
+
+.library-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.library-header h1 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.library-header p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+/* REVISED: The Grid Layout */
+.pdf-grid {
+    display: grid;
+    /* This creates responsive columns that are at least 280px wide */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem; /* Increased gap for better spacing */
+}
+
+/* REVISED: Individual PDF Cards */
+.pdf-card {
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    /* This adds a colored accent line at the top */
+    border-top: 4px solid var(--primary-color);
+    border-radius: 4px; /* Subtle rounding */
+    padding: 1.25rem;
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pdf-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+}
+
+.pdf-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.3;
+}
+
+.pdf-card .author-info {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 1.5rem; /* More space before the icon */
+    font-style: italic;
+}
+
+.pdf-card .icon {
+    margin-top: auto;
+    align-self: flex-end;
+    width: 24px;
+    height: 24px;
+    color: var(--primary-color);
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.pdf-card:hover .icon {
+    opacity: 1;
+}

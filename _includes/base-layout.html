@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} | LoopSpace Café</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    
+    {% if page_css %}
+        <link rel="stylesheet" href="{{ page_css }}">
+    {% endif %}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+    
+    <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['\\(', '\\)']],
+            displayMath: [['$$', '$$']]
+          },
+          svg: {
+            fontCache: 'global'
+          }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
+    </head>
+<body>
+    {% include "header.html" %}
+
+    <main>
+        {{ content }}
+    </main>
+
+    {% include "footer.html" %}
+    
+    {% if page_js %}
+        <script src="{{ page_js_data }}"></script>
+        <script src="{{ page_js }}"></script>
+    {% endif %}
+</body>
+</html>

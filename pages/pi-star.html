@@ -1,0 +1,33 @@
+---
+layout: base-layout.html
+title: Homotopy Groups of Spheres
+permalink: /pi-star/
+page_css: /static/css/pi-star.css
+page_js_data: /static/js/pi-star-data.js
+page_js: /static/js/pi-star.js
+---
+
+<div class="pi-star-main">
+    <section class="pi-star-header">
+        <h1>Homotopy Groups of Spheres: \(\pi_k(S^n)\)</h1>
+        <p>Enter non-negative integers for the sphere dimension \(n\) and the group index \(k\) to see known properties.</p>
+    </section>
+
+    <div class="input-form">
+        <div class="input-group">
+            <label for="n-input">Dimension \(n\)</label>
+            <input type="number" id="n-input" value="2" min="0">
+        </div>
+        <div class="input-group">
+            <label for="k-input">Index \(k\)</label>
+            <input type="number" id="k-input" value="3" min="0">
+        </div>
+    </div>
+    
+    <div id="error-popup" class="error-popup">
+        Please enter valid non-negative integers for n and k.
+    </div>
+
+    <section id="results-container" class="results-container">
+        </section>
+</div>
