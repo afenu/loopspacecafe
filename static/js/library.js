@@ -13,7 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
         grid.innerHTML = ''; // Clear the "Loading..." message
         libraryData.forEach(paper => {
             const card = document.createElement('a');
-            card.href = paper.url;
+            // Prepend the site prefix to make the link work everywhere
+            card.href = SITE_PREFIX + paper.url.substring(1); // substring(1) removes the leading '/' to prevent double slashes
             card.className = 'pdf-card';
             card.target = '_blank';
 

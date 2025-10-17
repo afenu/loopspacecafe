@@ -2,37 +2,30 @@
 const libraryData = [
   {
     "id": 1,
-    "title": "An Introduction to K-Theory",
-    "author": "M. F. Atiyah",
-    "year": 1967,
-    "url": "path/to/atiyah_k_theory.pdf"
+    "title": "A Primer on Mapping Class Groups",
+    "author": "Benson Farb and Dan Margalit",
+    "year": 2011,
+    "url": "/static/libri/primeronmappingclassgroup.pdf"
   },
   {
     "id": 2,
-    "title": "Homotopy Groups of Spheres",
-    "author": "H. Toda",
-    "year": 1962,
-    "url": "path/to/toda_homotopy.pdf"
+    "title": "Configuration Spaces are not Homotopy Invariant",
+    "author": "Riccardo Longoni and Paolo Salvatore",
+    "year": 2005,
+    "url": "/static/libri/counterexampleslongonisalvatore.pdf"
   },
   {
     "id": 3,
-    "title": "A Primer on Spectral Sequences",
-    "author": "J. McCleary",
-    "year": 2001,
-    "url": "path/to/mccleary_primer.pdf"
+    "title": "Braid Groups",
+    "author": "C. Kassel and V. Turaev",
+    "year": 2008,
+    "url": "/static/libri/braidgroupskasselturaev.pdf"
   },
   {
     "id": 4,
-    "title": "The Geometry of Fiber Bundles",
-    "author": "T. Frankel",
-    "year": 1997,
-    "url": "path/to/frankel_fiber.pdf"
-  },
-  {
-    "id": 5,
-    "title": "Vector Bundles and Characteristic Classes",
-    "author": "J. Milnor, J. Stasheff",
-    "year": 1974,
-    "url": "path/to/milnor_stasheff.pdf"
+    "title": "Structure des Espaces de Configurations",
+    "author": "Najib Idrissi",
+    "year": 2018,
+    "url": "/static/libri/najibidrissihabilitation.pdf"
   }
 ];
