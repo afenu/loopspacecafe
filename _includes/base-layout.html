@@ -37,9 +37,10 @@
 
     {% include "footer.html" %}
     
+
     {% if page_js %}
-        <script src="{{ page_js_data | url }}"></script>
-        <script src="{{ page_js | url }}"></script>
+      <script src="{{ page_js_data }}"></script>
+      <script src="{{ page_js }}"></script>
     {% endif %}
 </body>
 </html>
