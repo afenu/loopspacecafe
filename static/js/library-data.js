@@ -5,27 +5,27 @@ const libraryData = [
     "title": "A Primer on Mapping Class Groups",
     "author": "Benson Farb and Dan Margalit",
     "year": 2011,
-    "url": "/static/libri/primeronmappingclassgroup.pdf"
+    "url": "../static/libri/primeronmappingclassgroup.pdf" // Correct relative path
   },
   {
     "id": 2,
     "title": "Configuration Spaces are not Homotopy Invariant",
     "author": "Riccardo Longoni and Paolo Salvatore",
     "year": 2005,
-    "url": "/static/libri/counterexampleslongonisalvatore.pdf"
+    "url": "../static/libri/counterexampleslongonisalvatore.pdf" // Correct relative path
   },
   {
     "id": 3,
     "title": "Braid Groups",
     "author": "C. Kassel and V. Turaev",
     "year": 2008,
-    "url": "/static/libri/braidgroupskasselturaev.pdf"
+    "url": "../static/libri/braidgroupskasselturaev.pdf" // Correct relative path
   },
   {
     "id": 4,
     "title": "Structure des Espaces de Configurations",
     "author": "Najib Idrissi",
     "year": 2018,
-    "url": "/static/libri/najibidrissihabilitation.pdf"
+    "url": "../static/libri/najibidrissihabilitation.pdf" // Correct relative path
   }
 ];
